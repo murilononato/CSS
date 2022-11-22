@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+Tudo que é id em HTML = # em CSS
+Tudo que é classe em HTML = . em CSS
+
+classe é multiplo para todos elementos 
+ID é unico para um elemento
+*/
+
+body{
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h2{
+    color: chartreuse;
+}
+
+.basico{
+    color: rgb(255, 198, 13);
+}
+
+.avancado{
+    color: brown;
+}   
+
+.destaque{
+    background-color: dimgrey;
+}
+
