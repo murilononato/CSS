@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu em Css</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #252839;
+    } /*centrar e colorir*/
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    } /*define forma de coluna e um espacamento de 30px*/
+    ul li{ 
+        position: relative;
+        list-style: none;
+    }/*Retira as bolinhas*/
+    ul li a{
+        position: relative;
+        font-size: 4em;
+        text-decoration: none;
+        line-height: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+    } /*Deixa transparente e deixa com a letra diferente*/
+    ul li a::before{
+        content: attr(data-text);
+        position: absolute;
+        color: var(--clr);
+        width: 0;
+        overflow: hidden;
+        transition: 1.5s;
+        border-right: 8px solid var(--clr);
+        -webkit-text-stroke: 1px var(--clr);
+    } /*Cria as bordas e a suposta animação*/
+    ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+    }
+</style>
+<body>
+    <ul>
+        <li style="--clr:#00ade1">
+            <a href="index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
+        </li>
+        <li style="--clr:#ff6493">
+            <a href="SegundaPag.html" data-text="&nbsp;Pedidos">&nbsp;Pedidos&nbsp;</a>
+        </li>
+        <li style="--clr:#ffdd1c">
+            <a href="cores.html" data-text="&nbsp;Vendas">&nbsp;Vendas&nbsp;</a>
+        </li>
+        <li style="--clr:#00dc82">
+            <a href="degrade.html" data-text="&nbsp;Contato">&nbsp;Contato&nbsp;</a>
+        </li>
+        <li style="--clr:#dc00d4">
+            <a href="projetozinho.html" data-text="&nbsp;Sair">&nbsp;Sair&nbsp;</a>
+        </li>
+    </ul>
+</body>
+</html>
