@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+</head>
+<style>
+    /*div tem toda a largura(width) preenchida automaticamente*/
+    div{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    /*A filha p que herda da div fica oculta == none*/
+    div > p{
+        display: none;
+    }
+
+    div:hover > p{
+        display: block;
+       /* color: crimson;*/
+    }
+
+    .valor{
+        color: green;
+    }
+
+</style>
+<body>
+    <h1>MENU DE RESTAURANTE</h1>
+    <div>
+        Cardapio
+        <p>Peixe Frit <spam class="valor">R$ 83,50</spam></p>
+        <p>Arroz  <spam class="valor">R$ 13,50</spam></p>
+        <p>Suco de Laranja  <spam class="valor">R$ 8,50</spam></p>
+    </div>
+</body>
+</html>
