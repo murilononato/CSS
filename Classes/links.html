@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+
+    
+
+    a{
+        color: brown;
+        text-decoration: none;
+        font-weight:bold ;
+    }
+
+    /*se o link ja foi visitado*/
+    a:visited{
+        color: blue;
+    }
+
+    a:active{
+        color: yellow;
+    }
+
+    a:hover{
+
+        text-decoration: underline;
+    }
+
+    /*Depois do a vai aparecer um conteudo (content) */
+
+    a::after{
+        content: ' [link]';
+        color: darkgray;
+        text-decoration: none;
+        font-weight: normal ;
+    }
+
+      /*Antes do a vai aparecer um conteudo (content) */
+    a::before{
+        content: '*';
+        color: darkgray;
+        text-decoration: none;
+        font-weight: normal ;
+    }
+    .especial{
+        background-color: rgb(197, 233, 197);
+        color: aliceblue; /*Deixa branco mas o visited esta sobrepondo deixando blue*/
+    }
+.especial::before{
+    content: '=>';
+}
+
+</style>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <!-- target="_blank" é para o link abrir na guia ao lado -->
+
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22&ab_channel=CursoemV%C3%ADdeo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://github.com/murilononato" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="ID.html" target="_blank" class="especial">Site de ID</a></li>
+    </ul>
+</body>
+</html>
