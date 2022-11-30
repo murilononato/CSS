@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas e Links</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: ;
+        }
+
+
+        body{
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        main > ul{
+            list-style-position: inside;
+            columns: 2;
+            list-style-type: '\1F5F8\00A0'; /*00A0 é espaco*/
+            
+        }
+
+        header > h1{
+            color: white;
+        }
+
+        main{
+            background-color: rgb(96, 172, 197);
+            padding: 0px 0px 100px 0px;
+            margin-left: 110px;
+            margin-right: 110px;
+            border-radius: 10px;
+        }
+
+        main > h1{
+            background-color: rgb(60, 141, 179);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        a{
+            text-decoration: none;
+  
+            
+        }
+        
+        a.externo::after{
+        content: '\00A0\1F517';
+    
+        }
+
+        a:hover{
+            color: azure;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>LISTA E LINKS EM CSS</h1>
+    </header>
+    <main>
+        <h1>Acesse os links</h1>
+        <ul>
+            <li><a href="#">Link Interno</a></li>
+            <li><a href="#" class="externo">Link Externo</a></li>
+            <li><a href="#" class="externo">Link Externo</a></li>
+            <li><a href="#" class="externo">Link Externo</a></li>
+            <li><a href="#">Link Interno</a></li>
+            <li><a href="#" class="externo">Link Externo</a></li>
+            <li><a href="#">Link Interno</a></li>
+            <li><a href="#" class="externo">Link Externo</a></li>
+        </ul>
+    </main>
+    
+</body>
+</html>
