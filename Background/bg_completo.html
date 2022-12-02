@@ -19,11 +19,26 @@
             background-size: cover; /*preenche a tela mas corta as beiras da imagens se for necessario*/
 
             /* background-size: contain; */ /*mostra 100% da imagem*/
+
+            /* background-attachment: scroll; */ /*Rola junto com conteudo*/
+            background-attachment: fixed; /*bg fica fundo*/
+
+
+            /*Shorthands
+            color > image > position > repeat > [size] > attachment 
+            
+            ainda o size não esta funcionando logo o COVER devera se colocado a parte
+        
+            background: white url('../img/montanha.jpg') top center no-repeat fixed ;
+            
+            background-size: cover;   
+            
+            */
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 600px; /*max-width é o MAXIMO q vai ficar então mesmo se a tela seja de 5000 pixeis o max que o main fica é 500px*/
             padding: 10px;
             margin: auto; /*centraliza*/
             border: 1px solid black;
@@ -35,7 +50,11 @@
 <body>
     <main>
         <h1>TESTANDO 100% DAS IMAGENS DE FUNDO</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam! </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam! 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam eligendi quis neque sed accusantium sequi nisi expedita reprehenderit, a at rerum aliquid maxime illo illum, reiciendis veniam? Dicta, natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste obcaecati ut repellendus ex exercitationem assumenda natus autem possimus reiciendis, architecto amet vel aperiam facere soluta necessitatibus ea maxime quam!</p>
     </main>
 </body>
 </html>
