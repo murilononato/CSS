@@ -13,17 +13,49 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        thead , tfoot{
-            background-color: lightgrey;
-        }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+
+        thead , tfoot{
+            background-color: rgb(97, 97, 97);
+        }
+
+        th{
+            background-color:rgb(143, 148, 153) ;
+        }
         .class{
             text-align: center;
+        }
+
+        caption{
+            background-color: gray;
+            margin-bottom: 5px;
+            padding: 5px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+ 
+        .cab {
+            position: sticky; /*posicao de grudado*/
+            top: -1px; /*precisa ter top 0px ou -1px*/
+            background-color:rgb(143, 148, 153) ;
+        }
+        /*nth-child(2n)
+            significa que ele vai pular de 1 linha e na segunda vai executar a ação!
+
+            nth-child(2n-1) mesma coisa mas comeca de cima na primeira coluna
+
+            nth-child(odd) IMPAR
+            nth-child(even) PAR
+        */
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(228, 228, 228);
         }
 
     </style>
@@ -38,9 +70,10 @@
     TFOOT -->
     <table>
         <thead>
+            <caption>CHAMPIONS IN LEAGUE OF LEGENDS</caption>
             <tr>
-                <th>CHAMPION</th>
-                <th>MAIN CLASS</th>
+                <th class="cab" scope="col">CHAMPION</th>
+                <th class="cab" scope="col">MAIN CLASS</th>
             </tr>
         </thead>
         <tbody>
@@ -73,13 +106,79 @@
                 <td>PYKE</td>
                 <td class="class">ASSASSIN</td>
             </tr>
+            <tr>
+                <td>ASHE</td>
+                <td class="class">ADC</td>
+            </tr>
+            
+            <tr>
+                <td>SORAKA</td>
+                <td class="class">SUPORTE</td>
+            </tr>
+            
+            <tr>
+                <td>AMUMU</td>
+                <td class="class">TANK</td>
+            </tr>
+            
+            <tr>
+                <td>RYZE</td>
+                <td class="class">MAGE</td>
+            </tr>
+            
+            <tr>
+                <td>LEE SIN</td>
+                <td class="class">FIGHTER</td>
+            </tr>
+            
+            <tr>
+                <td>PYKE</td>
+                <td class="class">ASSASSIN</td>
+            </tr>
+            <tr>
+                <td>ASHE</td>
+                <td class="class">ADC</td>
+            </tr>
+            
+            <tr>
+                <td>SORAKA</td>
+                <td class="class">SUPORTE</td>
+            </tr>
+            
+            <tr>
+                <td>AMUMU</td>
+                <td class="class">TANK</td>
+            </tr>
+            
+            <tr>
+                <td>RYZE</td>
+                <td class="class">MAGE</td>
+            </tr>
+            
+            <tr>
+                <td>LEE SIN</td>
+                <td class="class">FIGHTER</td>
+            </tr>
+            
+            <tr>
+                <td>PYKE</td>
+                <td class="class">ASSASSIN</td>
+            </tr>
         </tbody>
 <!-- 
-    Mesmo que bote o tfoot em outro lugar a semantica deixa o tfoot no ultimo lugar voce querendo ou não -->
+    Mesmo que bote o tfoot em outro lugar a semantica deixa o tfoot no ultimo lugar voce querendo ou não 
+
+    scope serve para o google pesquisar as tabelas pelos titulos
+
+
+    scope="col" top cabecario
+    scope="row" bot// rodapé
+
+-->
 
     <tfoot>
         <tr>
-            <th>6 CHAMPIONS</th>
+            <th scope="row">6 CHAMPIONS</th>
             <td>6 CLASS</td>
         </tr>
     </tfoot>
