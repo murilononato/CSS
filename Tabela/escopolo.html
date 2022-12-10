@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOPOLO EM TABELAS</title>
+    <style>
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes</caption>
+<!-- 
+        O Col se usa para uma unica coluna
+
+        no caso Filmes possuem 3 colunas não 1 coluna igual as nomes ou o grupo -->
+
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+<!-- 
+            A mesma coisa para Mulheres ja que serão 3 linhas com cada uma representando o nome de uma mulher -->
+
+            <tr>
+                <th rowspan="3" scope="rowgroupe">Mulheres</th>
+                <td>Ana Clara</td>
+                <td>Vingadores</td>
+                <td>IT a coisa</td>
+                <td>A Bela e A Fera</td>
+            </tr>     
+            <tr>
+                <td>Cintia</td>
+                <td>The Big Hero</td>
+                <td>Titanic</td>
+                <td>Iron Man 2</td>
+            </tr>
+            
+            <tr>
+                <td>Bianca</td>
+                <td>Homem aranha</td>
+                <td>Frozen</td>
+                <td>Luca</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroupe">Homens</th>
+                <td>Pedro</td>
+                <td>Tropa de Elite</td>
+                <td>Hulk</td>
+                <td>Veloses e Furiosos</td>
+            </tr>     
+            <tr>
+                <td>Leonardo</td>
+                <td>Minha Mãe é uma Peça</td>
+                <td>Harry Potter</td>
+                <td>Viuva Negra</td>
+            </tr>
+            
+            <tr>
+                <td>Augusto</td>
+                <td>Divertidamente</td>
+                <td>Toy Store</td>
+                <td>Encanto</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" scope="row">Total</td>
+                <td colspan="3">18</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
