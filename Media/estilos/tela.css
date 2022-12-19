@@ -1,4 +1,23 @@
 @charset "UTF-8";
 
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: grey;
+    line-height: 35px;
+}
+
+header > h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 /*Estilo para telas*/
